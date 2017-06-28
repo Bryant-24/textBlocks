@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Тестовое задание</title>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<h1>Список текстовых блоков</h1>
+
+	<ul id="blocks">
+		<li class="block">
+			<p>Простой тестовый блок</p>
+			<span class="block-close"></span>
+		</li>
+
+		<li class="block block--hard">
+			<p>Сложный тестовый блок</p>
+			<span class="block-close"></span>
+		</li>
+	</ul>
+
+	<table>
+		<tr>
+			<td>Кол-во блоков:</td>
+			<td>Выделено:</td>
+			<td>Из них зеленых:</td>
+			<td>Из них красных:</td>
+		</tr>
+		<tr>
+			<td><input id="quantity" type="number" value="2" disabled></td>
+			<td><input id="quantitySelected" type="number" value="0" disabled></td>
+			<td><input id="quantitySelectedGreen" type="number" value="0" disabled></td>
+			<td><input id="quantitySelectedRed" type="number" value="0" disabled></td>
+		</tr>
+	</table>
+
+	<form id="add-form">
+		<input id="count" type="text" placeholder="Введите количество букв (по-умолчанию, 100)">
+		<button id="button">Добавить блок</button>
+	</form>
+
+	<script src="main.js"></script>
+</body>
+</html>
